@@ -7,6 +7,14 @@ body {
     display: flex;
 }
 
+.backbtn {
+    cursor:pointer;
+    width:25px;
+    filter:invert();
+    position:fixed;
+    padding:5px 0px 0px 5px;
+}
+
 .sidebar {
     width: 25%;
     min-width: 200px;
