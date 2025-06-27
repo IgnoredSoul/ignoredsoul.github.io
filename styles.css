@@ -1,0 +1,75 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #121212;
+  color: #e0e0e0;
+  display: flex;
+  height: 100vh;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.container {
+  display: flex;
+  width: 100%;
+}
+
+.left {
+  width: 28%;
+  min-width: 250px;
+  background-color: #1b1b1b;
+  padding: 40px;
+  box-sizing: border-box;
+  border-right: 1px solid #333;
+}
+
+.left h1 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.left p {
+  font-size: 16px;
+  line-height: 1.5;
+  color: #bdbdbd;
+}
+
+.left a {
+  color: #80cbc4;
+  text-decoration: none;
+}
+
+.right {
+  flex: 1;
+  padding: 40px;
+  box-sizing: border-box;
+}
+
+.right h2 {
+  font-size: 32px;
+  font-weight: 800;
+  margin-bottom: 10px;
+  color: hsl(0, 0%, 80%);
+}
+
+.section-divider {
+  height: 3px;
+  width: 60px;
+  background: #80cbc4;
+  margin-bottom: 30px;
+  border-radius: 2px;
+}
+.tool-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.tool-card {
+  background-color: #1f1f1f;
+  padding: 20px;
+  border: 1px solid #333;
+}

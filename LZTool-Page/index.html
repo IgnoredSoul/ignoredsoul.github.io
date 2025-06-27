@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>LZString JSON Tool</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="sidebar">
+    <h1><u>LZString JSON Tool</u></h1>
+    <p>Import LZString compressed JSON from your clipboard, edit it, and export it.</p>
+    <p>This is only used for converting a compressed JSON and will throw an error if it's not.</p>
+
+    <div class="button-row">
+      <button onclick="importFromClipboard()">📋 Import from Clipboard</button>
+      <button onclick="importFromFile()">📁 Import from File</button>
+    </div>
+
+    <div class="button-row">
+      <button onclick="saveToClipboard()">💾 Save to Clipboard</button>
+      <button onclick="exportToFile()">📂 Save to File</button>
+    </div>
+
+    <div id="status"></div>
+    <input type="file" id="fileInput" accept="*.*" style="display: none;" />
+
+    <footer>
+      <a href="https://www.github.com/ignoredsoul">
+        <img src="https://www.svgrepo.com/show/512317/github-142.svg" style="width:50px; filter:invert()" />
+      </a>
+    </footer>
+  </div>
+
+  <div class="editor-container">
+    <textarea id="jsonEditor" placeholder="Decoded JSON will appear here..." spellcheck="false"></textarea>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lz-string/1.4.4/lz-string.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
